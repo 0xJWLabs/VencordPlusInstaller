@@ -1,15 +1,17 @@
 # Based partially on Alyxia's work, thanks so much!
 
 name: Release
+
+permissions:
+  contents: write
+  packages: write
+
 on:
   push:
     tags:
       - v*
   workflow_dispatch:
 
-permissions:
-  contents: write
-  
 env:
   FORCE_COLOR: true
 
